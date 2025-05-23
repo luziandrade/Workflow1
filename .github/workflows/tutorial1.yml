@@ -8,14 +8,20 @@ jobs:
          steps:
          - name: step1
            run: echo "Hello from job1"
+
          - name: Echo today's date
            run: echo "Today's date is $(date +'%Y-%m-%d')"
+
          - name: setup python
            uses: actions/setup-python@v4
            with:
              python-version: 3.9
+
          - name: check version of python
            run: python --version
+
+         - name: check pip version
+           run: pip --version 
 
     job2:
          name: job2
@@ -23,6 +29,7 @@ jobs:
          steps:
          - name: step2
            run: echo " hello from job 2"
+
          - name: Echo today's date
            run: echo "Today's date is $(date +'%Y-%m-%d')"
 
@@ -31,6 +38,7 @@ jobs:
          steps:
          - name: step 3
            run: echo " hello from job 3"
+
          - name: Echo today's date
            run: echo "Today's date is $(date +'%Y-%m-%d')"
     
@@ -40,5 +48,6 @@ jobs:
          steps:
          - name: step 4
            run: echo " I am job4"
+           
          - name: Echo today's date
            run: echo "Today's date is $(date +'%Y-%m-%d')"
