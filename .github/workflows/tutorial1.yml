@@ -1,5 +1,8 @@
 name: tutorial1
-on: push
+on: 
+  push:
+      branches:
+        - dev
 
 jobs:
     job1:
@@ -48,6 +51,6 @@ jobs:
          steps:
          - name: step 4
            run: echo " I am job4"
-           
+
          - name: Echo today's date
            run: echo "Today's date is $(date +'%Y-%m-%d')"
