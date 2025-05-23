@@ -13,7 +13,7 @@ jobs:
          - name: Working Directory
            run: pwd
 
-         - name: Contents of directory:
+         - name: Contents of directory
            run: ls -al
     
     job2:
