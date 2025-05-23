@@ -30,6 +30,7 @@ jobs:
     
     job4:
          runs-on: ubuntu-latest
+         needs: [job1,job2]
          steps:
          - name: step 4
            run: echo " I am job4"
