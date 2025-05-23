@@ -1,0 +1,17 @@
+name: challenge1
+on: workflow_dispatch
+
+
+jobs:
+    job1:
+         name: job1
+         runs-on: ubuntu-latest
+         steps:
+         - name: today's date
+           run: $(date +'%Y-%m-%d')
+
+         - name: Working Directory
+           run: pwd
+
+         - name: Contents of directory:
+           run: ls -al
