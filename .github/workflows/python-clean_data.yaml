@@ -16,10 +16,10 @@ jobs:
       run: python --version
 
     - name: checkout code
-    - uses: actions/checkout@v4
+      uses: actions/checkout@v4
 
     - name: clean_data
-    - run: |
+      run: |
         pwd
         ls  -al
         pwd
